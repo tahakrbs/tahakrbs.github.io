@@ -22,29 +22,76 @@ p{
 button{
     font-size: large;
     height: 50px;
-    width: 75px;
+    width: 100px;
 
-    background-color: lightgreen;
-    color: white;
+    background-color: white;
+    color: gray;
 
-    box-shadow: 0 0 25px rgb(0,0,0,0.3);
-    border-radius: 15px;
-    border: none;
 
-    transition: color 0.1s,
-    background-color 0.1s,
+    border-radius: 10px;
+    border: solid;
+    border-width: 1px;
+    border-color: lightgray;
+
+    transition: border-width 0.1s,
+    border-bottom-width 0.1s,
     box-shadow 0.1s;
 }
 button:hover{
-    font-size: larger;
     color: black;
     background-color: white;
-    box-shadow: 0 0 15px rgb(0,0,0,0.5);
+
+    border-width: 0px;
+    border-bottom-width: 1px;
+
+    box-shadow: 0 5px 10px rgb(0,0,0,0.3);
+}
+button:active{
+    color: white;
+    background-color: lightgray;
+
+    border-width: 0px;
+
+    box-shadow: none;
 }
 
 .title{
     font-weight: bolder;
     font-size: xx-large;
     font-family: Arial;
-    color: green;
+    color: black;
+
+    border-width: 5px;
+    text-shadow: 0 10px 10px lightgray;
+}
+
+.coolpanel{
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(0,0,0,0.3);
+    margin: auto;
+    text-align: center;
+}
+
+.coolheader{
+    font-size: xx-large;
+    font-family: Arial;
+    color: black;
+    text-align: center;
+    text-shadow: 0 0 45px black;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
+    margin:10px;
+    box-shadow: 0 10px 30px gray;
+
+    transition: border-radius 0.3s,
+    transform 0.1s;
+}
+img:hover{
+    border-radius: 15px;
+    transform: translate(0, -10px);
 }
