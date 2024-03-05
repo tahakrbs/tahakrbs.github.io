@@ -1,0 +1,51 @@
+.uppanel{
+    display: flex;
+    justify-content: left;
+
+    height: 50px;
+
+    position: fixed;
+    background-color: white;
+    box-shadow: 0 10px 10px lightgray;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.titleimg{
+    height: 50px;
+}
+
+.embed-btn{
+    border: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: white;
+
+    color: gray;
+    font-size: 20px;
+
+    width: 125px;
+    height: 50px;
+    margin-left: 10px;
+
+    transition: all 0.1s;
+}
+.embed-btn:hover{
+    border-color: white;
+    color: black;
+    box-shadow: 0 5px 10px gray;
+    font-weight: bold;
+
+    translate: 0 -3px;
+}
+.embed-btn:active{
+    translate: 0 0;
+    border-color: green;
+    background-color: lightgreen;
+    box-shadow: 0 0 0;
+}
